@@ -18,6 +18,7 @@ test {
 
 jar {
 	enabled = false
+	archiveClassifier = ''
 }
 
 dependencies {
