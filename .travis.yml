@@ -15,9 +15,9 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r freelec-springboot2-webservice
+  - zip -r book # repository name
   - mkdir -p deploy
-  - mv freelec-springboot2-webservice.zip deploy/freelec-springboot2-webservice.zip
+  - mv book.zip deploy/book.zip
 
 deploy:
   - provide: s3
